@@ -1,0 +1,195 @@
+2024-12-08 21:43:18,430 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 21:47:12,741 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 21:49:28,811 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 21:51:32,817 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 21:53:29,840 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 21:56:46,573 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:00:44,671 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:08:07,078 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:09:31,286 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:10:30,574 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:18:04,130 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:18:22,644 - database_service - ERROR - Error fetching query: no such column: type
+2024-12-08 22:19:58,070 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:20:17,001 - database_service - ERROR - Error fetching query: no such column: type
+2024-12-08 22:20:46,529 - database_service - ERROR - Error fetching query: no such column: type
+2024-12-08 22:23:04,946 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:23:26,493 - database_service - ERROR - Error fetching query: no such column: total_rooms
+2024-12-08 22:23:26,494 - room_service - ERROR - No rooms found for type: 3
+2024-12-08 22:29:06,277 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:29:28,972 - room_service - INFO - 
+                Room availability check:
+                - Type: Single
+                - Capacity: 20
+                - Booked: 0
+                - Available: 20
+                - Check-in: 2024-12-08
+                - Check-out: 2024-12-25
+            
+2024-12-08 22:30:24,504 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 360, in <lambda>
+    command=lambda ft=filter_type: self.change_filter(ft)
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 370, in change_filter
+    self.records_service.set_strategy(AllRecordsStrategy())
+                                      ^^^^^^^^^^^^^^^^^^
+NameError: name 'AllRecordsStrategy' is not defined
+2024-12-08 22:30:25,565 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:30:28,405 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:32:54,931 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:33:13,054 - room_service - ERROR - Error checking room availability: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:33:57,730 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:36:13,766 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:36:34,223 - room_service - ERROR - Error checking room availability: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:36:49,339 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:41:42,533 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:42:06,940 - room_service - INFO - Found 0 overlapping bookings for Double between 2024-12-08 and 2024-12-25
+2024-12-08 22:42:11,689 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 213, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 229, in show_records
+    RecordsWindow(self, self.database_service)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 345, in __init__
+    self.load_records()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 395, in load_records
+    self.update(records)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 406, in update
+    checkin_date = datetime.strptime(checkin, '%Y-%m-%d')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not datetime.date
+2024-12-08 22:43:33,539 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:43:56,144 - room_service - INFO - Found 1 overlapping bookings for Double between 2024-12-08 and 2024-12-29
+2024-12-08 22:44:29,829 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 360, in <lambda>
+    command=lambda ft=filter_type: self.change_filter(ft)
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 374, in change_filter
+    self.records_service.set_strategy(UpcomingRecordsStrategy())
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'UpcomingRecordsStrategy' is not defined
+2024-12-08 22:46:49,604 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-08 22:47:10,229 - room_service - INFO - Found 0 overlapping bookings for Presidential between 2024-12-08 and 2024-12-25
+2024-12-08 22:47:35,779 - root - ERROR - Exception:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 223, in <lambda>
+    child.bind('<Button-1>', lambda e, cmd=command: cmd())
+                                                    ^^^^^
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 230, in show_rooms_info
+    RoomsInfoWindow(self)
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 540, in __init__
+    super().__init__(root, "Room Information", "800x600")
+  File "d:\FeedbackHub\py\hotel gui\base_window.py", line 11, in __init__
+    self._create_widgets()
+  File "d:\FeedbackHub\py\hotel gui\main_app.py", line 559, in _create_widgets
+    for idx, (room_type, price, description) in enumerate(room_info):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2024-12-08 22:49:46,348 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-11 20:23:38,992 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-11 20:25:32,989 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
+2024-12-11 20:33:48,314 - room_service - INFO - Found 1 overlapping bookings for Single between 2024-12-11 and 2024-12-17
+2024-12-21 01:30:41,502 - database_service - INFO - Initializing database at C:\Users\2bo3isha\hotel_management\hotel.db
